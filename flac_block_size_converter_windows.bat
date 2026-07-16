@@ -25,9 +25,6 @@ for %%F in (*.flac) do (
 
     set "NAME=%%~nF"
 
-    :: Remove old temp files
-    del /q "temp\*" >nul 2>&1
-
     :: Export tags
     metaflac --export-tags-to="temp\tags.txt" "%%F"
 
@@ -38,7 +35,7 @@ for %%F in (*.flac) do (
     for /f "tokens=3" %%B in ('
         metaflac --list --block-number=0 "%%F" ^| findstr /C:"minimum blocksize:"
     ') do (
-        echo Block Size     : %%B ^> 4608
+        echo Block Size     : %%B -^> 4608
     )
 
     :: Decode to .wav
@@ -76,7 +73,7 @@ for %%F in (*.flac) do (
 )
 
 :: Cleanup temp files
-del /q "temp\*" >nul 2>&1
+rmdir /s /q "temp"
 
 echo =====================================
 echo.
